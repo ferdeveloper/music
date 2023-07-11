@@ -1,16 +1,16 @@
 <template>
   <div class="">
-    <img
+    <div
       class="AlbumHero__img"
-      :src="img"
-      :alt="`${title} cover`"
-    >
+      :style="backgroundImage"
+    />
     {{ title }}
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { linearGradientImage } from '../../../helpers/imageHelper';
 
 export default defineComponent({
   name: 'AlbumHero',
@@ -23,6 +23,13 @@ export default defineComponent({
       type: String,
       required: true,
     },
+  },
+  setup(props) {
+    const backgroundImage = linearGradientImage(props.img);
+
+    return {
+      backgroundImage,
+    };
   },
 });
 </script>
