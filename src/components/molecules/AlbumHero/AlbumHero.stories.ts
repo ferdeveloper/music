@@ -1,15 +1,28 @@
+import type { Meta, StoryObj } from '@storybook/vue3';
 import AlbumHero from './AlbumHero.vue';
 
-export default {
-  title: 'Design System/molecules/AlbumHero',
+const meta: Meta<typeof AlbumHero> = {
   component: AlbumHero,
 };
 
-const PrimaryTemplate = () => ({
-  components: { AlbumHero },
-  template: `
-    <AlbumHero></AlbumHero>
-  `,
-});
+export default meta;
+type Story = StoryObj<typeof AlbumHero>;
 
-export const Primary = PrimaryTemplate.bind({});
+export const Primary: Story = {
+  render: (args) => ({
+    title: 'Design System/molecules/AlbumHero',
+    components: { AlbumHero },
+    setup() {
+      return { args };
+    },
+    template: '<AlbumHero v-bind="args" />',
+  }),
+  args: {
+    img: 'https://picsum.photos/500',
+    title: 'greatest hits',
+  },
+};
+
+Primary.parameters = {
+  layout: 'fullscreen',
+};
