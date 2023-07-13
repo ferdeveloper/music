@@ -1,19 +1,22 @@
 <template>
-  <div class="">
-    <div
-      class="AlbumHero__img"
-      :style="backgroundImage"
-    />
-    {{ title }}
+  <div
+    class="AlbumHero"
+    :style="backgroundImage"
+  >
+    <Head1>
+      {{ title }}
+    </Head1>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Head1 from '@/components/atoms/text/Head1/Head1.vue';
 import { linearGradientImage } from '../../../helpers/imageHelper';
 
 export default defineComponent({
   name: 'AlbumHero',
+  components: { Head1 },
   props: {
     img: {
       type: String,

@@ -6,6 +6,7 @@ const meta: Meta<typeof AlbumHero> = {
 };
 
 export default meta;
+
 type Story = StoryObj<typeof AlbumHero>;
 
 export const Primary: Story = {
