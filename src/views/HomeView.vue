@@ -1,10 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <AlbumHero
-      img="https://picsum.photos/200"
-      title="fallling"
-    />
+    <AlbumHero />
   </div>
 </template>
 
