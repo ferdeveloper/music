@@ -2,8 +2,9 @@
 
 .AlbumHero
 	&__mobile
-		@media screen and (min-width: $break-computer)
+		@media screen and (min-width: $break-tablet)
 			display: none
 	&__desktop
-		@media screen and (max-width: $break-computer)
-			display: none
+		display: none
+		@media screen and (min-width: $break-tablet)
+			display: block
