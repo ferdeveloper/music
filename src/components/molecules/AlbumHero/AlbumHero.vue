@@ -5,6 +5,7 @@
         img="https://picsum.photos/200"
         title="Fallling"
       />
+      <SocialMediaBlock />
     </div>
     <div class="AlbumHero__desktop">
       <AlbumHeroDesktop
@@ -19,12 +20,14 @@
 import { defineComponent } from 'vue';
 import AlbumHeroMobile from './AlbumHeroMobile/AlbumHeroMobile.vue';
 import AlbumHeroDesktop from './AlbumHeroDesktop/AlbumHeroDesktop.vue';
+import SocialMediaBlock from '../SocialMediaBlock/SocialMediaBlock.vue';
 
 export default defineComponent({
   name: 'AlbumHero',
   components: {
     AlbumHeroMobile,
     AlbumHeroDesktop,
+    SocialMediaBlock,
   },
 });
 </script>
