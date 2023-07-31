@@ -2,14 +2,13 @@
   <div>
     <div class="AlbumHero__mobile">
       <AlbumHeroMobile
-        img="https://picsum.photos/200"
+        :img="img"
         title="Fallling"
       />
-      <SocialMediaBlock />
     </div>
     <div class="AlbumHero__desktop">
       <AlbumHeroDesktop
-        img="https://picsum.photos/200"
+        :img="img"
         title="Fallling"
       />
     </div>
@@ -20,14 +19,18 @@
 import { defineComponent } from 'vue';
 import AlbumHeroMobile from './AlbumHeroMobile/AlbumHeroMobile.vue';
 import AlbumHeroDesktop from './AlbumHeroDesktop/AlbumHeroDesktop.vue';
-import SocialMediaBlock from '../SocialMediaBlock/SocialMediaBlock.vue';
 
 export default defineComponent({
   name: 'AlbumHero',
+  props: {
+    img: {
+      type: String,
+      required: true,
+    },
+  },
   components: {
     AlbumHeroMobile,
     AlbumHeroDesktop,
-    SocialMediaBlock,
   },
 });
 </script>

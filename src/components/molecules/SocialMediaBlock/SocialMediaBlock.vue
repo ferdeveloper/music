@@ -4,9 +4,11 @@
       v-for="socialMedia in socialMediaData"
       :key="socialMedia.alt"
       :href="socialMedia.url"
+      target="_blank"
+      class="SocialMediaBlock__item"
     >
       <img
-        class="SocialMediaBlock__item"
+        class="SocialMediaBlock__icon"
         :src="require(`@/assets/media/${socialMedia.icon}.png`)"
         :alt="`Icono ${socialMedia.alt}`"
       >

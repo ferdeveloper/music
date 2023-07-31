@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <AlbumHero />
+    <AlbumHero
+      :img="require(`@/assets/covers/falling.png`)"
+    />
   </div>
 </template>
 
