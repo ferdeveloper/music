@@ -5,14 +5,18 @@
       :src="img"
       :alt="`Portada ${title}`"
     >
-    <h1 class="AlbumHeroDesktop__title">
-      {{ title }}
-    </h1>
+    <div class="AlbumHeroDesktop__infoBlock">
+      <h1 class="AlbumHeroDesktop__title">
+        {{ title }}
+      </h1>
+      <SocialMediaBlock />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import SocialMediaBlock from '@/components/molecules/SocialMediaBlock/SocialMediaBlock.vue';
 
 export default defineComponent({
   name: 'AlbumHeroDesktop',
@@ -25,6 +29,9 @@ export default defineComponent({
       type: String,
       required: true,
     },
+  },
+  components: {
+    SocialMediaBlock,
   },
 });
 </script>

@@ -4,10 +4,12 @@
 $iconSize: pixelsToRem(48)
 
 .SocialMediaBlock
-  display: flex
-  justify-content: center
   &__item
     margin: 0 pixelsToRem(24)
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
   &__icon
     width: $iconSize
     height: $iconSize

@@ -2,6 +2,7 @@
   <div class="home">
     <AlbumHero
       :img="require(`@/assets/covers/falling.png`)"
+      title="Falling"
     />
   </div>
 </template>

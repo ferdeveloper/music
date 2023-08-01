@@ -9,7 +9,7 @@
     <div class="AlbumHero__desktop">
       <AlbumHeroDesktop
         :img="img"
-        title="Fallling"
+        :title="title"
       />
     </div>
   </div>
@@ -24,6 +24,10 @@ export default defineComponent({
   name: 'AlbumHero',
   props: {
     img: {
+      type: String,
+      required: true,
+    },
+    title: {
       type: String,
       required: true,
     },

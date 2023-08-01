@@ -16,8 +16,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { linearGradientImage } from '../../../../helpers/imageHelper';
-import SocialMediaBlock from '../../SocialMediaBlock/SocialMediaBlock.vue';
+import { linearGradientImage } from '@/helpers/imageHelper';
+import SocialMediaBlock from '@/components/molecules/SocialMediaBlock/SocialMediaBlock.vue';
 
 export default defineComponent({
   name: 'AlbumHeroMobile',
