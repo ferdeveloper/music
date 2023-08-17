@@ -1,0 +1,10 @@
+@import '@/style/functions'
+@import '@/style/breakpoints'
+
+.SongList
+  padding: pixelsToRem(24)
+  display: grid
+  grid-template-columns: 1fr
+  gap: pixelsToRem(24)
+  @media screen and (min-width: $break-tablet)
+    grid-template-columns: 1fr 1fr
