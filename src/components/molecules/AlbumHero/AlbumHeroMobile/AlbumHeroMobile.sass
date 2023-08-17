@@ -1,0 +1,27 @@
+@import '@/style/functions'
+@import '@/style/colors'
+@import '@/style/textHelper'
+
+.AlbumHeroMobile
+	width: 100vw
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	height: 100vw
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+	padding-bottom: pixelsToRem(32)
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	&__title
+		font-size: min(8vw, 6rem)
+		word-break: break-word
+		@include paragraphEllipsis(2)
+	&__socialMediaBlockContainer
+		padding: pixelsToRem(32)
+		.SocialMediaBlock
+			display: flex
+			justify-content: center

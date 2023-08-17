@@ -1,0 +1,19 @@
+@import '@/style/borders'
+@import '@/style/functions'
+@import '@/style/colors'
+  
+.AlbumHeroDesktop
+  display: flex
+  align-items: flex-end
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.3) 100%)
+  border-bottom: 1px solid $color-grey
+  padding: pixelsToRem(60)
+  &__img
+    width: 100%
+    max-width: pixelsToRem(300)
+    border-radius: $border-img
+  &__infoBlock
+    padding: pixelsToRem(48)
+  &__title
+    font-size: min(10vw, 6rem)
+    margin-bottom: pixelsToRem(24)

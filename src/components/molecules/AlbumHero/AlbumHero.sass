@@ -1,0 +1,10 @@
+@import '@/style/breakpoints'
+
+.AlbumHero
+	&__mobile
+		@media screen and (min-width: $break-tablet)
+			display: none
+	&__desktop
+		display: none
+		@media screen and (min-width: $break-tablet)
+			display: block

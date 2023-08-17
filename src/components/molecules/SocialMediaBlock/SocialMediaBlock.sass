@@ -1,0 +1,16 @@
+@import '@/style/borders'
+@import '@/style/functions'
+
+$iconSize: pixelsToRem(48)
+
+.SocialMediaBlock
+  &__item
+    margin: 0 pixelsToRem(24)
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__icon
+    width: $iconSize
+    height: $iconSize
+    border-radius: $border-icon
