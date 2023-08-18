@@ -21,7 +21,13 @@
 		word-break: break-word
 		@include paragraphEllipsis(2)
 	&__socialMediaBlockContainer
+		display: flex
+		flex-direction: column
+		align-items: center
 		padding: pixelsToRem(32)
 		.SocialMediaBlock
 			display: flex
 			justify-content: center
+			margin-top: pixelsToRem(24)
+
+	
