@@ -3,6 +3,7 @@
     <AlbumHero
       :img="require(`@/assets/covers/falling.png`)"
       title="Falling"
+      alt="Falling"
     />
     <SongList
       :songListData="fallingData"
