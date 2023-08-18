@@ -18,7 +18,7 @@ import SongList from '@/components/molecules/SongList/SongList.vue';
 import fallingData from '../data/fallingData';
 
 export default defineComponent({
-  name: 'HomeView',
+  name: 'FallingView',
   components: {
     AlbumHero,
     SongList,
