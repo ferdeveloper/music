@@ -6,9 +6,11 @@
       :alt="`Portada ${title}`"
     >
     <div class="AlbumHeroDesktop__infoBlock">
+      <p class="AlbumHeroDesktop__label">Álbum</p>
       <h1 class="AlbumHeroDesktop__title">
         {{ title }}
       </h1>
+      <p class="AlbumHeroDesktop__label">Escúchalo en:</p>
       <SocialMediaBlock />
     </div>
   </div>

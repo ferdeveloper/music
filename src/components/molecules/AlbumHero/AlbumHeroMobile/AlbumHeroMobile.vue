@@ -9,6 +9,7 @@
       </h1>
     </div>
     <div class="AlbumHeroMobile__socialMediaBlockContainer">
+      <p class="AlbumHeroMobile__label">Escúchalo en:</p>
       <SocialMediaBlock />
     </div>
   </div>
