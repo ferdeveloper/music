@@ -1,0 +1,28 @@
+@import '@/style/functions'
+@import '@/style/breakpoints'
+
+%block
+  @media screen and (min-width: $break-tablet)
+    width: 100%
+    max-width: 300px
+  @media screen and (min-width: $break-computer)
+    max-width: pixelsToRem(400)
+  
+.AlbumInfo
+  padding: pixelsToRem(24)
+  margin-top: pixelsToRem(24)
+  @media screen and (min-width: $break-tablet)
+    display: flex
+    justify-content: center
+    gap: pixelsToRem(24)
+  &__text
+    @extend %block
+    text-align: left
+    padding: pixelsToRem(24) 0
+    font-size: pixelsToRem(20)
+    line-height: pixelsToRem(30)
+  &__songs
+    @extend %block
+    margin-top: pixelsToRem(32)
+    @media screen and (min-width: $break-tablet)
+      margin-top: 0
