@@ -28,3 +28,7 @@ export default defineComponent({
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 </style>
+
+<style lang="sass">
+  @import './style/components/app.sass'
+</style>
